@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Card</title>
+    <style>
+        .pokemon-card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px;
+            width: 200px;
+            display: inline-block;
+        }
+        .pokemon-img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <label for="pokemon-id">Ingresa el ID del Pokémon que deseas ver :</label>
+        <input type="number" id="pokemon-id" min="1" max="898"> 
+        <button onclick="fetchAndDisplayPokemon()">Mostrar</button>
+    </div>
+
+    <div id="pokemon-container"></div>
+
+    <script src="pokeFetch.js"></script>
+</body>
+</html>
